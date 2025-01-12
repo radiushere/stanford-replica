@@ -16,7 +16,6 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    top: 0;
     z-index: 1000;
     box-sizing: border-box;
 }
@@ -44,8 +43,15 @@ header nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 10px;
-    font-size: 1em;
+    font-size: 16px;
     transition: font-size 0.5s ease;
+}
+
+header nav p {
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    display: inline;
+    font-size: 16px;
 }
 
 header nav a:hover {
@@ -54,6 +60,7 @@ header nav a:hover {
     font-size: 17px;
     transition: font-size 0.5s ease;
 }
+
 
 .hero {
     background: url('images/StanfordSplash.webp') no-repeat center center/cover;
@@ -67,18 +74,19 @@ header nav a:hover {
 
 .hero h1 {
     font-size: 80px;
-    margin: 0;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
 .explore {
+
+    /* using this for all explore/more buttons */
+
     background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
     border: none;
-    font-size: 1em;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -93,8 +101,8 @@ header nav a:hover {
 
 .explore:hover {
     background-color: #5a1313;
-    font-size: 20px;
-    transition: font-size 0.3s ease;
+    font-size: 18px;
+    transition: font-size 0.1s ease;
 }
 
 .about {
@@ -158,15 +166,13 @@ header nav a:hover {
 .news-content h3 {
     color: black;
     margin: 0;
+    text-align: center;
 }
 
 .news-content p {
     color: black;
     margin: 2px 0;
     font-size: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -183,6 +189,45 @@ header nav a:hover {
 .news-content img:hover {
     transform: scale(1.1);
 }
+
+.acadhero {
+    background: url('images/q1.webp') no-repeat center center/cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.acadhero h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.healthhero {
+    background: url('images/q2.webp') no-repeat center center/cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.healthhero h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
 
 footer {
     background-color: var(--primary-color);
