@@ -1,0 +1,202 @@
+:root {
+    /*wanted to use root since adding the hex again and again is difficult*/
+    --primary-color: #8C1515;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(140, 21, 21, 0));
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .logo a {
+    color: #ff1c1c;
+    text-decoration: none;
+    /*to make the unhover animation smoother*/
+    transition: font-size 0.5s ease;
+}
+
+header .logo a:hover {
+    /*cool font size change animation, will be used in every button*/
+    font-size: 31px;
+    transition: font-size 0.5s ease;
+}
+
+header nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: font-size 0.5s ease;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: rgb(197, 196, 196);
+    font-size: 17px;
+    transition: font-size 0.5s ease;
+}
+
+.hero {
+    background: url('images/StanfordSplash.webp') no-repeat center center/cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 80px;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.explore {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.explore a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: font-size 0.3s ease;
+}
+
+.explore:hover {
+    background-color: #5a1313;
+    font-size: 20px;
+    transition: font-size 0.3s ease;
+}
+
+.about {
+    padding: 20px;
+}
+
+.about h2 {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p {
+    margin: 10px 0;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news {
+    /*just to mention before-hand this "news" class will be used for everything from here on out*/
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.news h2 {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news p {
+    margin: 10px 0;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news-card {
+    margin-bottom: 5px;
+    padding: 32px;
+    border-radius: 4px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-content h3 {
+    color: black;
+    margin: 0;
+}
+
+.news-content p {
+    color: black;
+    margin: 2px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.news-content img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
